@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title>learning project forms</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Привет друг, заполни пожайлуста эту форму!</h1>
+	<form action="formdata.php" method="post" enctype="multipart/form-data">
+		<fieldset><legend>Ввод личных данных:</legend>
+			<p><label>Введите Ваше имя:<input type="text" name="username" value=""></label></p>
+			<p><label>Введите Ваш пароль:<input type="password" name="password" value=""></label></p>
+			<p><label>Введите Ваш номер телефона:<input type="tel" name="telephon" value=""></label></p>
+		</fieldset>
+		<fieldset>
+			<legend>Вопросы:</legend>
+			<p>Вы работаете?
+			<label>Да<input type="radio" name="job" value="Да"></label>
+			<label>Нет<input type="radio" name="job" value="Нет"></label>
+			</p>
+			<br>
+			<p>Какое у вас образование?</p>
+			<p><label><input type="checkbox" name="education" value="Школа">Школа</label></p>
+			<p><label><input type="checkbox" name="education" value="Училище">Училище</label></p>
+			<p><label><input type="checkbox" name="education" value="Колледж">Колледж</label></p>
+			<p><label><input type="checkbox" name="education" value="Университет">Университет</label></p>
+			<br>
+			<p>Ваш возраст?</p>
+			<select name="age">
+				<option name="age" value="18<=">младше или равен 18</option>
+				<option name="age" selected value="25<=">младше или равен 25</option>
+				<option name="age" value="35<=">младше или равен 35</option>
+				<option name="age" value="45<=">младше или равен 45</option>
+				<option name="age" value="55<=">младше или равен 55</option>
+				<option name="age" value="65<=">младше или равен 65</option>
+				<option name="age" value="75<=">младше или равен 75</option>
+				<option name="age" value="85<=">младше или равен 85</option>
+			</select>
+			<br>
+			<p><label for="feedback">Оставте отзыв о нашем проекте: </label></p>
+				<textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+
+		</fieldset>
+		<br>
+		<fieldset><legend>Отправка формы</legend>
+			<button type="post" value="">Отправить</button>
+			<button type="reset" value="">Сбросить</button>
+			<p class="subbmit">Отправить<label><input type="image" src="img/post.png" class="button"></label></p></fieldset>
+	</form>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
